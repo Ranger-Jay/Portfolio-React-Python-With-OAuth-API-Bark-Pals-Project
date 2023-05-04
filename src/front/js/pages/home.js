@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { Context } from "../store/appContext";
 // import rigoImageUrl from "../../img/bark-pals-bg.png";
-// import rigoImageUrl from "../../img/bark-pals-bg.png";
+import BgImageUrl from "../../img/bark-pals-bg.png";
 // import "../../img/bark-pal-bg.png";
 import "../../styles/home.css";
 
@@ -11,7 +11,9 @@ export const Home = () => {
   return (
     <div className="text-center mt-5">
       <h1>Welcome!</h1>
-      <p>{/* <img src={rigoImageUrl} /> */}</p>
+      <p>
+        <img src={BgImageUrl} />
+      </p>
 
       <p>
         Bark Pals is youe one stop solution to set up play dates, find parks,
