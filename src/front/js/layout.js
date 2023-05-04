@@ -10,7 +10,7 @@ import { Demo } from "./pages/demo";
 import { Single } from "./pages/single";
 import injectContext from "./store/appContext";
 
-import { Navbar } from "./component/navbar";
+import NavbarPage from "./component/navbar";
 import { Footer } from "./component/footer";
 import { Playdate } from "./pages/Playdate";
 
@@ -24,7 +24,7 @@ const Layout = () => {
     <div>
       <BrowserRouter basename={basename}>
         <ScrollToTop>
-          <Navbar />
+          <NavbarPage />
           <Routes>
             <Route element={<Home />} path="/" />
             <Route element={<Login />} path="/Login" />
