@@ -9,7 +9,7 @@ function NavbarPage() {
   return (
     <>
       <Navbar bg="light" expand="lg">
-        <Navbar.Brand href="#home">My Bark Pals</Navbar.Brand>
+        <Navbar.Brand href="#home">Bark Pals Home</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
@@ -27,7 +27,7 @@ function NavbarPage() {
           <Nav className="ml-auto">
             <Dropdown>
               <Dropdown.Toggle variant="light" id="dropdown-basic">
-                Actions
+                My Bark Pals
               </Dropdown.Toggle>
 
               <Dropdown.Menu>

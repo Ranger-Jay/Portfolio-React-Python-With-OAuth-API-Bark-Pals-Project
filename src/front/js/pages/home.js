@@ -1,7 +1,8 @@
 import React, { useContext } from "react";
 import { Context } from "../store/appContext";
 // import rigoImageUrl from "../../img/bark-pals-bg.png";
-// import rigoImageUrl from "../../img/bark-pal-bg2.jpg";
+// import rigoImageUrl from "../../img/bark-pals-bg.png";
+// import "../../img/bark-pal-bg.png";
 import "../../styles/home.css";
 
 export const Home = () => {
