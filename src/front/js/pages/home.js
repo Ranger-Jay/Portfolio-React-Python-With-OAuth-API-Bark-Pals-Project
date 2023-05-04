@@ -10,14 +10,13 @@ export const Home = () => {
 
   return (
     <div className="text-center mt-5">
-      <h1>Welcome!</h1>
+      <h1>Bark Pals</h1>
       <p>
         <img src={BgImageUrl} />
       </p>
 
       <p>
-        Bark Pals is youe one stop solution to set up play dates, find parks,
-        and meet fellow dog lovers
+        A date for you and your best friend
       </p>
     </div>
   );
