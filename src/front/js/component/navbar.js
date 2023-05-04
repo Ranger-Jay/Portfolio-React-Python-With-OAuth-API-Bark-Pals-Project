@@ -31,11 +31,9 @@ function NavbarPage() {
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
-                <Dropdown.Item onClick={handleCommentModalShow}>
-                  Leave a comment
-                </Dropdown.Item>
-                <Dropdown.Item href="#/action-2">View messages</Dropdown.Item>
-                <Dropdown.Item href="#/action-3">Send message</Dropdown.Item>
+                <Dropdown.Item onClick={handleCommentModalShow}>Post a comment</Dropdown.Item>
+                <Dropdown.Item href="#/action-2">Message Center</Dropdown.Item>
+                <Dropdown.Item href="#/action-3">My Profile</Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>
           </Nav>

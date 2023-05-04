@@ -1,12 +1,26 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import { GoogleOAuthProvider } from "@react-oauth/google";
+import { GoogleLogin } from "@react-oauth/google";
+
 
 export const Login = () => {
   const [username, setusername] = useState("");
   const [password, setpassword] = useState("");
+  const navigate = useNavigate();
   function handel_submit(e) {
     e.preventDefault();
   }
+
+  function onSignIn(googleUser) {
+    var profile = googleUser.getBasicProfile();
+    console.log("ID: " + profile.getId()); // Do not send to your backend! Use an ID token instead.
+    console.log("Name: " + profile.getName());
+    console.log("Image URL: " + profile.getImageUrl());
+    console.log("Email: " + profile.getEmail()); // This is null if the 'email' scope is not present.
+  }
+
   return (
     <div className="row">
       <form className="mx-auto col-6 pt-5">
@@ -56,9 +70,30 @@ export const Login = () => {
             <Link to="/Signup">
               <a href="#!">Sign Up!</a>
             </Link>
+            {/* <div class="g-signin2 text-white" data-onsuccess={onSignIn}>test</div> */}
+            <GoogleOAuthProvider clientId="188012050470-nihj1ucjec12h06u1qf624j7secgceha.apps.googleusercontent.com">
+              <GoogleLogin
+                onSuccess={(credentialResponse) => {
+                  console.log(credentialResponse);
+                  navigate("/playdate");
+                }}
+                onError={() => {
+                  console.log("Login Failed");
+                }}
+              />
+            </GoogleOAuthProvider>
           </span>
         </div>
       </form>
     </div>
   );
 };
+
+// here is the code for the google api login
+
+//  <script src="https://apis.google.com/js/platform.js" async defer></script>
+// <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
+
+/* /* sign in button here */
+
+/* The onSignIn function to handle the sign-in response, and get user google profile info */
