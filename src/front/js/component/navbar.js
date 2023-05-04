@@ -19,9 +19,7 @@ function NavbarPage() {
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
-                <Dropdown.Item href="#/action-1">
-                  Join the Community
-                </Dropdown.Item>
+                <Dropdown.Item href="/Signup">Join the Community</Dropdown.Item>
                 <Dropdown.Item href="/Login">Log in</Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>
