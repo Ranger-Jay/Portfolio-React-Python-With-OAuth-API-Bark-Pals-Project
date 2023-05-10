@@ -15,9 +15,7 @@ export const Home = () => {
         <img src={BgImageUrl} />
       </p>
 
-      <p>
-        A date for you and your best friend
-      </p>
+      <h4>A date for you and your best friend</h4>
     </div>
   );
 };

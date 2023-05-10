@@ -1,0 +1,31 @@
+.school-link {
+  font-size: 1.1rem;
+}
+
+.school-link:hover {
+  color: yellow;
+  letter-spacing: 2px;
+  transition: 0.5s;
+}
+
+.school-link {
+  color: white;
+  transition: 0.5s;
+}
+
+/* doing it this way below makes everything "breath" with the animation. why??? */
+
+/* a {
+  font-size: 1.1rem;
+}
+
+a:hover {
+  color: yellow;
+  letter-spacing: 2px;
+  transition: 0.5s;
+}
+
+a {
+  color: white;
+  transition: 0.5s;
+} */

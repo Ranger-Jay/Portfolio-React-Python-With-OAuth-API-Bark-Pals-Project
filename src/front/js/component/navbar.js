@@ -1,5 +1,6 @@
 import React from "react";
 import { Navbar, Nav, Dropdown, Modal } from "react-bootstrap";
+import "../../styles/navbar.css";
 
 function NavbarPage() {
   const [showCommentModal, setShowCommentModal] = React.useState(false);
@@ -31,7 +32,9 @@ function NavbarPage() {
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
-                <Dropdown.Item onClick={handleCommentModalShow}>Post a comment</Dropdown.Item>
+                <Dropdown.Item onClick={handleCommentModalShow}>
+                  Post a comment
+                </Dropdown.Item>
                 <Dropdown.Item href="#/action-2">Message Center</Dropdown.Item>
                 <Dropdown.Item href="#/action-3">My Profile</Dropdown.Item>
               </Dropdown.Menu>
