@@ -1,6 +1,7 @@
 import React from "react";
 import { Navbar, Nav, Dropdown, Modal } from "react-bootstrap";
 import "../../styles/navbar.css";
+import { Link } from "react-router-dom";
 
 function NavbarPage() {
   const [showCommentModal, setShowCommentModal] = React.useState(false);
@@ -10,7 +11,9 @@ function NavbarPage() {
   return (
     <>
       <Navbar bg="light" expand="lg">
-        <Navbar.Brand href="#home">Bark Pals Home</Navbar.Brand>
+        <Navbar.Brand href="#home">
+          <Link to={"/"}>Bark Pals Home</Link>
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
@@ -36,7 +39,12 @@ function NavbarPage() {
                   Post a comment
                 </Dropdown.Item>
                 <Dropdown.Item href="#/action-2">Message Center</Dropdown.Item>
-                <Dropdown.Item href="#/action-3">My Profile</Dropdown.Item>
+                <Dropdown.Item href="#/action-3">
+                  <Link to={"/playdate"}>My Profile</Link>
+                </Dropdown.Item>
+                <Link to={"/Contact"}>
+                  <Dropdown.Item href="#/action-4">Contact Us</Dropdown.Item>
+                </Link>
               </Dropdown.Menu>
             </Dropdown>
           </Nav>
