@@ -10,7 +10,7 @@
   justify-content: center;
   align-items: center;
   height: 100%;
-  background-color: rgb(14, 138, 205);
+  background-color: transparent;
 }
 .carousel {
   width: 50%;
@@ -19,8 +19,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: orange;
-  background-image: linear-gradient(45deg, #2af598 50%, orange 100%);
+  background-color: rgb(217, 53, 53);
+  background-image: linear-gradient(
+    25deg,
+    #6a6b7e 45%,
+    rgba(226, 11, 11, 0) 100%
+  );
 }
 
 /*
@@ -45,4 +49,18 @@ h1 {
 
 h4 {
   color: yellow;
+}
+.notepad {
+  margin-right: 2rem;
+  height: 25rem;
+  width: 15rem;
+}
+.notes {
+  display: flex;
+  justify-content: center;
+}
+.pics {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

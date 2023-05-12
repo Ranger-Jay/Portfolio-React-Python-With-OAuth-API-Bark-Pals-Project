@@ -38,7 +38,6 @@ function NavbarPage() {
                 <Dropdown.Item onClick={handleCommentModalShow}>
                   Post a comment
                 </Dropdown.Item>
-                <Dropdown.Item href="#/action-2">Message Center</Dropdown.Item>
                 <Dropdown.Item href="#/action-3">
                   <Link to={"/playdate"}>My Profile</Link>
                 </Dropdown.Item>
