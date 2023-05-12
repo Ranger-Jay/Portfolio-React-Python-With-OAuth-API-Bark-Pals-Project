@@ -26,15 +26,15 @@
 }
 
 .footer > .social-media-icons-wrapper {
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   width: 300px;
   display: flex;
   justify-content: space-around;
 }
 
 .footer > .social-media-icons-wrapper a {
-  font-size: 1.5em;
+  font-size: 1.9em;
   color: #cbcbcb;
   transition: 0.5s;
 }

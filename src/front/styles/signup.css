@@ -1,0 +1,25 @@
+label {
+  font-weight: bold;
+}
+
+button {
+  font-weight: bold;
+}
+
+a {
+  color: #cea135;
+  font: bold;
+  transition: 0.5s;
+}
+
+a:hover {
+  color: black;
+  transition: 0.5s;
+}
+
+a {
+  font-weight: bold;
+  color: #cea135;
+  text-decoration: none;
+  text-decoration-color: whitesmoke;
+}
